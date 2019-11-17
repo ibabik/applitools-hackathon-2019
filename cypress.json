@@ -1,0 +1,7 @@
+{
+  "viewportWidth": 1200,
+  "baseUrl": "https://demo.applitools.com",
+  "env": {
+    "isV1": false
+  }
+}
