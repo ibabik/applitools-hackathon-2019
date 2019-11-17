@@ -15,7 +15,7 @@ describe('Amounts column', () => {
     })
 
     //muted because of the known bug JIRA-128
-    it.skip('should have ascending order - JIRA-128 Sort order should be ascending', () => {
+    it.skip('should have ascending order - JIRA-128 Sort order is random', () => {
         let min = Number.MIN_SAFE_INTEGER;
 
         appPage.amountHeader().click();

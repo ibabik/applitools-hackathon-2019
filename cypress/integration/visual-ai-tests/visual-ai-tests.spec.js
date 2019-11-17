@@ -77,7 +77,7 @@ describe('Application', () => {
 
     it('Can see bar chart data for 2 and 3 years', () => {
         appPage.compareExpensesBtn().click();
-        cy.wait(1000);
+        cy.wait(2000);
         cy.eyesCheckWindow({
             target: 'region',
             selector: '#canvas',
@@ -85,7 +85,7 @@ describe('Application', () => {
         });
 
         appPage.addDataSetBtn().click();
-        cy.wait(1000);
+        cy.wait(2000);
         cy.eyesCheckWindow({
             target: 'region',
             selector: '#canvas',
