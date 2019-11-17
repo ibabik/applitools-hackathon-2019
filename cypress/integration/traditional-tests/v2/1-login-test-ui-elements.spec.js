@@ -13,8 +13,8 @@ describe('Login page', () => {
         loginPage.logo();
     })
 
-    //muted because of the known bug XX-123
-    it.skip('has header', () => {
+    //muted because of the known bug JIRA-123
+    it.skip('has header - JIRA-123 Wrong header', () => {
         cy.contains('Login Form');
     })
 
@@ -22,8 +22,8 @@ describe('Login page', () => {
         cy.contains('Username');
     })
 
-    //muted because of the known bug XX-124
-    it.skip('has username icon', () => {
+    //muted because of the known bug JIRA-124
+    it.skip('has username icon - JIRA-124 missing username icon', () => {
         loginPage.usernameIcon();
     })
 
@@ -35,13 +35,13 @@ describe('Login page', () => {
         loginPage.usernameInput().should('have.attr', 'placeholder', 'John Smith');
     })
 
-    //muted because of the known bug XX-125
-    it.skip('has password label', () => {
+    //muted because of the known bug JIRA-125
+    it.skip('has password label - JIRA-125 Pwd instead of Password', () => {
         loginPage.passwordLabel().contains('Password');
     })
 
-    //muted because of the known bug XX-126
-    it.skip('has password icon', () => {
+    //muted because of the known bug JIRA-126
+    it.skip('has password icon - JIRA-126 Missing PW icon', () => {
         loginPage.passwordIcon();
     })
 
@@ -73,8 +73,8 @@ describe('Login page', () => {
         loginPage.facebookButton();
     })
 
-    //muted because of the known bug XX-127
-    it.skip('has LinkedIn button', () => {
+    //muted because of the known bug JIRA-127
+    it.skip('has LinkedIn button - JIRA-127 Missing LinkedIn icon', () => {
         loginPage.linkedinButton();
     })
 })

@@ -14,8 +14,8 @@ describe('Amounts column', () => {
         cy.contains('Recent Transactions');
     })
 
-    //muted because of the known bug XX-128
-    it.skip('should have ascending order', () => {
+    //muted because of the known bug JIRA-128
+    it.skip('should have ascending order - JIRA-128 Sort order should be ascending', () => {
         let min = Number.MIN_SAFE_INTEGER;
 
         appPage.amountHeader().click();
@@ -42,7 +42,8 @@ describe('Amounts column', () => {
         const transactions = appPage.getTransactionRows();
         appPage.amountHeader().click();
 
-        cy.get(appPage.transactionRow())
+        cy
+            .get(appPage.transactionRow())
             .each(($tr) => {
                 const text = $tr.text();
                 expect(transactions).to.contain(text);

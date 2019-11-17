@@ -14,8 +14,8 @@ describe('Dynamic content', () => {
         cy.contains('Recent Transactions');
     })
 
-    //muted because of a known bug (XX-129)
-    it.skip('can see flashSale banner', () => {
+    //muted because of a known bug (JIRA-129)
+    it.skip('can see flashSale banner - JIRA-129 Left-side banner is missing', () => {
         appPage.flashSaleBanner().should('have.attr', 'src', 'img/flashSale.gif');
     })
 

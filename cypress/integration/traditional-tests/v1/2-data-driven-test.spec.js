@@ -4,7 +4,7 @@ import { LoginPage } from '../../../page-objects/login-page'
 describe('Login page', () => {
     const loginPage = new LoginPage();
 
-    before(() => {
+    beforeEach(() => {
         cy.visit(Cypress.env('isV1') ? '/hackathon.html' : '/hackathonV2.html');
     })
 
